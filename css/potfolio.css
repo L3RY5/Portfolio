@@ -19,11 +19,11 @@ header{
     position: absolute;
    /* background: cadetblue;*/
     height: auto;
-    width: 100%;
+    width: 99.7%;
     left: 0;
     padding-left: 9px;
     margin-top: 4.6%;
-    border:cadetblue ridge 1px;
+   /* border:cadetblue ridge 1px;*/
     padding-top: 10px;
     background-image: url(../img/prev.jpg);
     background-repeat: no-repeat;
@@ -99,7 +99,7 @@ ul {
     padding: 0;
     overflow: hidden;
     background-color: #333;
-    width: 10%;
+    width: 12%;
    /* border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;*/
     border-radius:  0px 0px 10px 10px;
