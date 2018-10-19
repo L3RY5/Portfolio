@@ -23,22 +23,50 @@ header{
     margin-top: 4%;
     /*border:cadetblue ridge 1px;*/
     
-
-
 }
-.hobbies{
+
+/*Alles wat met hobbies te maken heeft*/
+.hobbies,.hobbies1,.hobbies2{
  
  width: 30%;
  height:300px;
  float: left;
  display: inline-block;
- border:blueviolet ridge 1px;
+ 
  margin: 10px;;
  overflow: hidden;
  box-shadow: #797c79  3px 3px;
  
+ color: transparent;
+}
+.hobbies{
+    background-image: url(../img/film-.jpg);
+}
+.hobbies1{
+    background-image: url(../img/lopen.jpg);
+}
+.hobbies2{
+    background-image: url(../img/scripting.jpg);
+}
+
+.hobbies:hover,.hobbies1:hover,.hobbies2:hover{
+    background-image: none;
+    color: #200e0e;
+    cursor: pointer;
 
 }
+
+.textHobbie{
+ width: 1000px;
+ height: auto;
+ border: red ridge 1px;
+ 
+ padding-top: 50%;
+
+}
+
+
+/*Einde hobbies*/
 
 
 #midenDivVanAlles{
