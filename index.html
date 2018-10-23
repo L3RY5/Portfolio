@@ -8,9 +8,12 @@
     <title>Home</title>
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/potfolio.css" />
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+    <script src="js/portfolio.js"></script>
 </head>
 
 <body>
+
     <header>
         <nav>
             <ul>
@@ -87,45 +90,89 @@
 
                 </tbody>
             </table>
-           
+
             <h2>Extra info over mijn projecten</h2>
             <div class="ProjectsContainer">
-                    <div class="container">
+                <!--<div id="PingScript" class="modal">
+                            <span class="close">&times;</span>
                             <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
-                            <div class="content">
+                            <div class="modal-content">
                               <h1>Ping Scripts</h1>
                               <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
                             </div>
                </div>  
-               <div class="container">
-                            <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
-                            <div class="content">
-                              <h1>User Script </h1>
-                              <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                            </div>
-               </div>   
-               <div class="container">
-                <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
-                <div class="content">
-                  <h1>Atlemo</h1>
-                  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
-                </div>
-               </div>
+               <div  id="PingScript2" class="container">
+                    <span class="close">&times;</span>
+                    <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
+                    
+       </div>-->
+               
+             <!--User script-->
+                <!-- Trigger/Open The Modal -->
+                <div id="UserScrBtn" class="container"> <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;"></div>
 
-               <div class="container">
-                <img src="img/titreGraciasSenor.JPG" alt="titre service gracias Senor" style="width:100%;">
-                <div class="content">
-                  <h1>Tritre Service Gracias Senor</h1>
-                  <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+
+                <!-- The Modal -->
+                <div id="UserScr" class="modal">
+
+                    <!-- Modal content -->
+                    <div class="modal-content, content">
+                        <span class="close">&times;</span>
+                        <img src="img/IM5Project.JPG" height="500" width="700" alt="Notebook">
+                        <div class="content">
+                            <h1>User Script </h1>
+                            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum
+                                cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri
+                                ponderum tractatos ei.</p>
+                        </div>
+                    </div>
                 </div>
-               </div>
-               <div class="container">
+
+               <!--Ping script-->
+                <div id="PingScrBtn" class="container"> <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;"></div>
+
+                <div id="PingScr" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content, content">
+                            <span class="close">&times;</span>
+                            <img src="img/IM5Project.JPG" height="500" width="700" alt="Notebook">
+                            <div class="content">
+                                <h1>Ping Script </h1>
+                                <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum
+                                    cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri
+                                    ponderum tractatos ei.</p>
+                            </div>
+                        </div>
+                    </div>
+                <div onclick="popupFunction()" id="Atlemo" class="container">
                     <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
                     <div class="content">
-                      <h1>Openbare Parking in Brussel</h1>
-                      <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei.</p>
+                        <h1>Atlemo</h1>
+                        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu
+                            recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum
+                            tractatos ei.</p>
                     </div>
-                   </div>
+                </div>
+
+                <div onclick="popupFunction()" id="GraciasSenor" class="container">
+                    <img src="img/titreGraciasSenor.JPG" alt="titre service gracias Senor" style="width:100%;">
+                    <div class="content">
+                        <h1>Tritre Service Gracias Senor</h1>
+                        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu
+                            recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum
+                            tractatos ei.</p>
+                    </div>
+                </div>
+                <div onclick="popupFunction()" id="ParkingBr" class="container">
+                    <img src="img/IM5Project.JPG" alt="Notebook" style="width:100%;">
+                    <div class="content">
+                        <h1>Openbare Parking in Brussel</h1>
+                        <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu
+                            recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum
+                            tractatos ei.</p>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -134,43 +181,45 @@
             <form>
                 <fieldset>
                     <legend>Contact gegevens</legend>
-                    
-                           <label for="Naam">Naam</label>
-                          <input class="inputOpmaak" id="Naam" type="text" name="Naam">
-                       
-                        
-                            <label for="Voornaam">Voornaam</label>
-                            <input class="inputOpmaak" type="text" id="Voornaam" name="Voornaam">
-                        
-                        
-                            <label for="TelNr">Tel</label>
-                            <input class="inputOpmaak" id="TelNr" placeholder="0032..." type="tel" name="TelNr">
-                                                
-                            <label for="eMail">e-mail</label>
-                            <input class="inputOpmaak" id="eMail" placeholder="someting@somting" type="email" name="eMail">
-                        
-                        
-                            Vraag over welke sector
-                            <select name="country">
-                                    <option value="NetWork">Network</option>
-                                    <option value="Programming">Programming</option>
-                                    <option value="Both">Both</option>
-                                </select>
-                        
 
-                        
-                            <label for="commentaar">comentaar of vraag</label>
-                            <textarea class="inputOpmaak" id="commentaar" name="commentaar" rows="4" cols="50"></textarea>                        
+                    <label for="Naam">Naam</label>
+                    <input class="inputOpmaak" id="Naam" type="text" name="Naam">
 
-                        
-                            <input type="submit" value="Submit">
-                           <input type="reset" value="reset">
-                     
+
+                    <label for="Voornaam">Voornaam</label>
+                    <input class="inputOpmaak" type="text" id="Voornaam" name="Voornaam">
+
+
+                    <label for="TelNr">Tel</label>
+                    <input class="inputOpmaak" id="TelNr" placeholder="0032..." type="tel" name="TelNr">
+
+                    <label for="eMail">e-mail</label>
+                    <input class="inputOpmaak" id="eMail" placeholder="someting@somting" type="email" name="eMail">
+
+
+                    Vraag over welke sector
+                    <select name="country">
+                        <option value="NetWork">Network</option>
+                        <option value="Programming">Programming</option>
+                        <option value="Both">Both</option>
+                    </select>
+
+
+
+                    <label for="commentaar">comentaar of vraag</label>
+                    <textarea class="inputOpmaak" id="commentaar" name="commentaar" rows="4" cols="50"></textarea>
+
+
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="reset">
+
                 </fieldset>
 
             </form>
             <div id="map">
-               <iframe width="700" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rue%20Montagne%20aux%20Herbes%20Potag%C3%A8res%2026%201000%20Bruxelles+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Add map to website</a></iframe>
+                <iframe width="700" height="600" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rue%20Montagne%20aux%20Herbes%20Potag%C3%A8res%2026%201000%20Bruxelles+()&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"><a href="https://www.maps.ie/create-google-map/">Add
+                        map to website</a></iframe>
             </div>
         </section>
     </article>
