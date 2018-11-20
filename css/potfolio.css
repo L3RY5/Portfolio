@@ -7,17 +7,6 @@ body{
 
 }
 
-/*pagina indeleing, art. sect. ...*/
-/*header{
-    
-    position: fixed;
-   background: #01031f;
-    width: 100%;
-    height: 14%;
-    top: 0; 
-    left: 0;
-    color: white;
-}*/
 
 footer{
     position: absolute;
@@ -55,15 +44,16 @@ width: 100%;
 
 }
 section#introSec{
-    background-color: rgb(194, 191, 191);
-
+   
+    background-color: rgb(117, 117, 117);
 }
 section#index{
     background:white;
     color: #000000;
 }
 section#project{
-    background-color: rgb(194, 191, 191);
+    
+    background-color: rgb(117, 117, 117);
 }
 section#form{
    
@@ -170,68 +160,10 @@ tr:nth-child(even) {
 /* einde table*/
 
 /*Form*/
-/*
 
 
-
-form{width: 100%;margin-right: 1%;}
-input[type=text],input[type=tel],input[type=email] ,select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-}
-
-textarea {
-resize: both;
-}
-
-input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 3s ease-out, color 1s ease-out;
-}
-input[type=reset] {
-    background-color: rgb(255, 55, 55);
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    float: right;
-    transition: background-color 3s ease-out, color 1s ease-out;
-}
-
-input[type=submit]:hover {
-    background-color: #06ff12;
-    color: #000000;
-  
-    
-}
-input[type=reset]:hover{
-    background-color: rgb(255, 0, 0);
-    color: #000000;
-
-
-}
-fieldset{
-    width: 50%;
-    margin-bottom: 10px;
-    border-radius: 5px;
-    background-color: #c4bdbd;
-    padding: 5px;
-    color: #070707;
-}
-*/
-form{background-color: red;width: 100%}
+.leeg{border: red 1px ridge;}
+form{background-color:  rgb(117, 117, 117);width: 100%}
 
 .container {
     width: 50%;
