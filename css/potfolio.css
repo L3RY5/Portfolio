@@ -86,14 +86,9 @@ section#form{
 #hobbieDivs{
     height: 340px;
     width: 100%;
-    border:yellow ridge 1px;
-    /*background-color: white;*/
+   justify-content: space-evenly;
     display: flex;
     flex-direction: row;
-   
-    
-    
-
 }
 .hobbies,.hobbies1,.hobbies2{
 
@@ -127,7 +122,6 @@ section#form{
 .textHobbie{
  width: 90%;
  height: 80%;
- border: red ridge 1px;
  margin: 0 auto;
  overflow: hidden;
  margin-top: 8%;
@@ -160,6 +154,7 @@ table {
     width: 90%;
     border: 1px solid #ddd;
     margin: 0 auto;
+    margin-bottom: 2%;
 }
 
 th, td {
@@ -244,11 +239,6 @@ fieldset{
     color: #070707;
 }
 
-.container2 {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-}
 
 /*Eind form*/
 /*Map*/
@@ -266,86 +256,18 @@ fieldset{
     font-size: 17px;
   }
   
-  .container2 {
-    position: relative;
-    max-width: 30%;
-    margin: 0 auto;
-  }
   
-  .container2 img {vertical-align: middle;}
-  
-  .container2 .content {
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    width: 100%;
-    padding: 20px;
-  }
- /* .container:active{
-  max-width: 80%;
- 
-  }*/
   .ProjectsContainer{
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
+    margin-top: 2%;
+    justify-content: space-evenly;
   }
 
   /*Einde Extra info projecten*/
   
-  /*Modal projecten vergroten*/
-/* The Modal (background) deze codoe is gecopieer en eenbeetje aangepast */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.7); /* Black w/ opacity */
-    padding-top: 2%;
-    padding-left: 10%;
-    padding-right: 10%;
-    
-
-}
-
-/* Modal Content/Box */
-.modal-content {
-    /*background-color: #fefefe;*/
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 100%; /* Could be more or less, depending on screen size */
-    color: #000000;
-    position: absolute;
-    bottom: 0;
-    background: rgb(0, 0, 0); /* Fallback color */
-    background: rgba(0, 0, 0, 1); /* Black background with 0.5 opacity */
-    color: #f1f1f1;
-    
-   
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
+  
 
 /*beging Bootstrap*/
 .masthead {
@@ -359,9 +281,11 @@ fieldset{
 
   .flip-card {
     background-color: transparent;
-    width: 300px;
+    width: 30%;
     height: 300px;
     perspective: 1000px;
+   
+    margin-top: 1%;
   }
   
   .flip-card-inner {
@@ -393,7 +317,7 @@ fieldset{
   }
   
   .flip-card-back {
-    background-color: #2980b9;
+    background-color: #010608;
     color: white;
     transform: rotateY(180deg);
     z-index: 1;
