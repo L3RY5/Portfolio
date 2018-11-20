@@ -1,4 +1,6 @@
 $(document).ready(function () {
+
+    /*scrool animatie , scrol vertragen*/
     $('a[href*="#"]:not([href="#"]):not([href="#show"]):not([href="#hide"])').click(function() {
 		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			var target = $(this.hash);
@@ -10,7 +12,12 @@ $(document).ready(function () {
 				return false;
 			}
 		}
-	});
+    });
+    /*scrool animatie , scrol vertragen*/
+
+
+
+/**form falidatie bij het submiten */
 
     $("#submit").on("click", function () {
         ///kijk of de voornaam niet leeg is
@@ -58,6 +65,8 @@ $(document).ready(function () {
         } else {
             alert("Voornaam is leeg");
         }
+
+        /**einde formvalidatie bij subitten */
 
 
 
