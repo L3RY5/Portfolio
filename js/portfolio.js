@@ -33,7 +33,7 @@ $(document).ready(function () {
                     }
                     //kijk of tel leeg is
                     if (!$.trim($('#phone').val()) == '') {
-                        if ($.trim($('#phone').val()) >12){
+                        if ($.trim($('#phone').val()) > 12) {
                             alert("Telepoon nr is te lang 0032.. max 12 numbers");
                         }
                     } else {
